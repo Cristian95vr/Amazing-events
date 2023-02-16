@@ -3,3 +3,181 @@
     padding: 0px;
     box-sizing: border-box;
 }
+header{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        display: flex;
+        flex-flow: column nowrap;
+        background:pink;
+        }
+        
+    .navegador2{
+        background: rgb(220, 220, 220);
+    }
+        .container{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .nav-link{
+            background-color: rgb(247, 222, 239);
+            color: rgb(244, 3, 144);
+            padding: 1px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+.section{
+    background:rgb(194, 193, 194);
+}
+ .seleccion{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    
+}
+.categoria{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+    
+}
+.buscador{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    flex-grow: 5 1 auto;
+}
+    .lupa{
+        color:rgba(248, 4, 248, 0.97);
+        align-self: center;
+        padding: 2px;
+        border: solid 1px pink;    
+    }
+.articulos{
+    background:rgb(194, 193, 194);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* height: 100vh; */
+    justify-content: space-around;
+    padding: 40px 10px;
+}
+    .articulo{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        border: solid 1px red;
+        background-color: rgb(243, 158, 172);
+        margin:5px;
+        width: 300px;
+        height: 350px;
+        padding:20px 0px 20px 0px;
+      
+        }
+        .articulo>img{
+            width: 270px;
+            height: 200px;
+            object-fit: cover;
+            /* padding: 20px; */
+            box-shadow: -8px -8px 5px rgb(0, 0, 0);
+            margin-bottom: 10px;
+        }
+       
+        .precio_ver>span{
+           margin-right: 100px;
+        }
+        .precio_ver>a{
+            background-color: rgb(247, 222, 239);
+            color: rgb(244, 3, 144);
+            padding: 5px 10px;
+            text-decoration: none;
+            box-shadow: -5px -5px 7px;
+        }
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    background: rgb(220, 220, 220);
+    
+}
+    .iconos{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .icon_insta{
+        margin: 10px;
+        color: rgb(232, 50, 80);
+        background-color:pink;
+        padding: 5px 10px;
+        border-radius: 100%;
+    }
+    .icon_face{
+        margin:10px;
+        color: rgb(232, 50, 80);
+        background-color:pink;
+        padding: 5px 10px;
+        border-radius: 100%;
+      }
+    .icon_whats{
+        margin:10px;
+        color: rgb(232, 50, 80);
+        background-color:pink;
+        padding: 5px 10px;
+        border-radius: 100%;
+      }
+      .palabra_foot{
+        margin-right: 10px;
+       font-weight: bold;
+      }
+  
+      /* contact */
+
+      .formulario{
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 66px 0px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      .boton{
+        align-self: flex-end;
+        margin-top: 15px;
+      }
+        button{
+            padding: 0px 10px;
+        }
+            .form_name>label{
+                margin-bottom: 0px;
+            }
+        
+            .form_email>label{
+                margin-bottom: 0px;
+                margin-top: 5px;
+            }
+        
+            .form_mensagge>label{
+                margin-bottom: 0px;
+                margin-top: 5px;
+            } 
+            
+            /* Stats */
+
+table{
+    background-color: pink;
+    text-align: left;
+    width: 100%;
+}
+th,td{
+    border: solid 1px black;
+    padding: 10px;
+}
+th{
+    background: palevioletred;
+}
