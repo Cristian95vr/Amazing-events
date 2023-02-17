@@ -28,6 +28,7 @@ header{
             border-radius: 5px;
         }
 .section{
+
     background:rgb(194, 193, 194);
 }
  .seleccion{
@@ -181,3 +182,46 @@ th,td{
 th{
     background: palevioletred;
 }
+
+/* details */
+.section_detalle{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background:rgb(194, 193, 194);
+ }
+.tarjeta_detalle{
+    background-color: pink;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid red;
+    padding: 30px;
+    margin: 50px 30px;
+    }
+    .img_detalle{
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            box-shadow: -8px -8px 20px rgb(0, 0, 0);
+            border: 1px solid black;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            align-self: center;
+            background-color: rgb(243, 158, 172);
+    }
+    .detalle{
+            width: 350px;
+            height: 350px;
+            border: 1px solid black;
+            align-self: center;
+            margin-bottom: 10px;
+            background-color: rgb(243, 158, 172);
+    }
+    .detalle>h1{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .detalle>p{
+        margin-left: 5px;
+    }
