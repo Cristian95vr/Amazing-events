@@ -180,13 +180,41 @@ function creacionTarjetas(event) {
     <p>${event.description}</p>
     <div class="precio_ver">
     <span>prince $ ${event.price}</span>
-    <a href="./details.html">ver mas...</a>
+    <a href="./details.html?id=${event._id}">ver mas...</a>
     </div>
     </article> `
     return card;
   };
 
+function checkboxes(category){
+  let check = `<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="${category}" value="${category}">
+  <label class="form-check-label" for="${category}">${category}</label>
+</div> `
+return check;
+}
 
+function busqueda(PalabraBuscar,arrayB){
+  let resultado = arrayB.filter(elementoBusc => elementoBusc.name.toLowerCase().includes(PalabraBuscar)) || elementoBusc.description.toLowerCase().includes(PalabraBuscar);
+  return resultado;
+}
+
+function vistaDeResultados(resultado){
+  if(resultado.length > 0){
+    let hResultado = "";
+
+    for(let i of resultado){
+      hResultado += creacionTarjetas(i);
+    }
+    cardContainer.innerHTML = hResultado;
+  } else{
+    cardContainer.innerHTML = `<div class="text-center">
+    <h3>Sorry!</h3>
+    <p>We did not find anything related to that search.</p>
+    </div>
+    `
+  };
+}
 
 
 
