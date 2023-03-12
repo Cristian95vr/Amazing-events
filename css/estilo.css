@@ -207,7 +207,12 @@ th{
             margin-right: 10px;
             margin-bottom: 10px;
             align-self: center;
-            background-color: rgb(243, 158, 172);
+            
+    }
+    .img_detalle > img{
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
     }
     .detalle{
             width: 350px;

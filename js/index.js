@@ -44,6 +44,9 @@ for(check of homeCheck){
 
 //dando vida al buscador
 
+document.querySelector(".buscador").onsubmit = (e)=>{
+    e.preventDefault();
+}
 let formBuscador = document.querySelector(".buscador");
 let PalabraIngresada = document.getElementById("search");
 formBuscador.addEventListener("submit",(evento)=> {
